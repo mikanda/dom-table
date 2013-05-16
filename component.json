@@ -1,0 +1,17 @@
+{
+  "name": "dom-table",
+  "repo": "mikanda/dom-table",
+  "description": "",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/domify":"*",
+    "mikanda/child":"*"
+  },
+  "development": {},
+  "license": "LGPL",
+  "scripts": [
+    "index.js",
+    "template.js"
+  ]
+}
