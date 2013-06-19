@@ -12,7 +12,7 @@ var template = require('./template'),
 function DomTable (el) {
   this.el = el;
   if (arguments.length === 0)
-    this.el = domify(template)[0];
+    this.el = domify(template);
   this.el.__proto__.addRow = this._addRow;
   this.el.__proto__.removeAllRows = this._removeAllRows;
   return this.el;
@@ -23,7 +23,7 @@ DomTable.prototype._addRow = function (element, rowIndex) {
    * add a new row to the table at given index
    * if index is undefined, add it to the end
    */
-  rowEl = domify('<tr></tr>')[0];
+  rowEl = domify('<tr></tr>');
   if (element !== null && element !== undefined)
     if (typeof element === "object")
       rowEl.appendChild(element);
@@ -39,7 +39,7 @@ DomTable.prototype._addRow = function (element, rowIndex) {
    * add addCell function to row
    */
   rowEl.__proto__.addCell = function (element, cellIndex) {
-    var cellEl = domify('<td></td>')[0];
+    var cellEl = domify('<td></td>');
     if (element !== null)
       if (typeof element === "object")
         cellEl.appendChild(element);

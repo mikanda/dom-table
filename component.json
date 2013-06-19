@@ -2,11 +2,11 @@
   "name": "dom-table",
   "repo": "mikanda/dom-table",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "keywords": [],
   "dependencies": {
-    "component/domify":"*",
-    "mikanda/child":"*"
+    "component/domify":"1.0.0",
+    "mikanda/child":"0.0.1"
   },
   "development": {},
   "license": "LGPL",
